@@ -1,5 +1,6 @@
 const UPDATE_LOAN_TYPE = 'UPDATE_LOAN_TYPE ';
 const UPDATE_PROPERTY_TYPE = 'UPDATE_PROPERTY_TYPE';
+const UPDATE_CITY = 'UPDATE_CITY';
 
 const initialState = {
     loanType: 'Home Purchase',
@@ -19,6 +20,14 @@ const initialState = {
     lastName: '',
     email: ''
   };
+
+  export function updateCity(city){
+      return{
+        type: UPDATE_CITY,
+        payload: city
+      }
+  }
+
 
   export function updateLoanType(loanType){
       return{
